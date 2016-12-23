@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:id="@+id/tbr">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/im_listword"
+                android:src="@drawable/contract" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:id="@+id/tu_listword"
+                android:textStyle="bold"
+                android:textColor="#ff130b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/nghiatv_listword"
+                android:textSize="35dp"
+                android:textColor="#ff28ba" />
+
+        </LinearLayout>
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/tbr"
+        android:gravity="center_vertical"
+        android:textSize="32dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text "
+        android:id="@+id/vidu_listword"
+        android:textStyle="italic"
+        android:textColor="#3c29ff" />
+</RelativeLayout>
